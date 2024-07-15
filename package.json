@@ -1,0 +1,17 @@
+{
+  "name": "travel-pocket-pb",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Demo repo for deploying Pocketbase to Fly!",
+  "scripts": {},
+  "author": "Johnny Magrippis <j@magrippis.com> (https://magrippis.com)",
+  "license": "MIT",
+  "keywords": [
+    "pocketbase",
+    "fly",
+    "CMS",
+    "CRM",
+    "deployment",
+    "CI/CD"
+  ]
+}
