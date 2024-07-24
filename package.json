@@ -3,7 +3,14 @@
   "private": true,
   "version": "0.0.1",
   "description": "Demo repo for deploying Pocketbase to Fly!",
-  "scripts": {},
+  "scripts": {
+    "dev": "pnpm docker:start || pnpm docker:run",
+    "docker:build": "docker build -t travel-pocket-pb .",
+    "docker:run": "docker run --name travel-pocket-pb -d -p 8090:8090 -v ./pb_data:/pb/pb_data -v ./pb_migrations:/pb/pb_migrations -v ./pb_hooks:/pb/pb_hooks travel-pocket-pb",
+    "docker:start": "docker start travel-pocket-pb",
+    "docker:stop": "docker stop travel-pocket-pb",
+    "docker:rm": "docker rm travel-pocket-pb"
+  },
   "author": "Johnny Magrippis <j@magrippis.com> (https://magrippis.com)",
   "license": "MIT",
   "keywords": [
